@@ -9,7 +9,7 @@ class Block {
 		this.hash = hash;
 		this.data = data;
 	}
-
+	
 	toString() {
         return `Block -
         	Timestamp: ${this.timestamp}
@@ -20,7 +20,7 @@ class Block {
 	
 	// The origional and first block in the blockchain.
 	static genesis() {
-		return new this('Genesis time', '--------', 'FIRST-HASH', [])
+		return new this('Genesis time', '--------', 'FIRST-HASH', []);
 	}
 	
 	// The method called that will allow a block to be mined and
